@@ -105,9 +105,6 @@ class MySQL extends QueryBuilder
 		$count = 0;
 		for($i = 0; $i < count($this->set); $i++) {
 			$set = $this->set[$i];
-			if($set[1] === null) {
-				continue;
-			}
 			if($count > 0) {
 				$query .= ',';
 			}
